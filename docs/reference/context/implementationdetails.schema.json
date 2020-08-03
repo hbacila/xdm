@@ -10,7 +10,7 @@
     "title": "Implementation details",
     "type": "object",
     "meta:extensible": true,
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
     "definitions": {
         "implementationdetails": {
@@ -32,7 +32,24 @@
                 "xdm:version": {
                     "title": "Version",
                     "type": "string",
-                    "description": "The version identifier of the API, for example, 'h.18'."
+                    "description": "The version identifier of the API, e.g h.18."
+                },
+                "xdm:environment": {
+                    "title": "Environment",
+                    "type": "string",
+                    "description": "The environment of the implementation",
+                    "enum": [
+                        "browser",
+                        "app",
+                        "server",
+                        "iot"
+                    ],
+                    "meta:enum": {
+                        "browser": "Web Browser",
+                        "app": "Application",
+                        "server": "Server",
+                        "iot": "Internet of Things Device"
+                    }
                 }
             }
         }
@@ -48,7 +65,8 @@
     "examples": [
         {
             "xdm:name": "https://ns.adobe.com/experience/analytics/appmeasurement",
-            "xdm:version": "2.7.0"
+            "xdm:version": "2.7.0",
+            "xdm:environment": "browser"
         }
     ]
 }

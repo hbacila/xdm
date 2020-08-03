@@ -9,7 +9,7 @@ Profile privacy schema captures general and sales sharing opt-out signals.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-privacy.schema.json](context/profile-privacy.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-privacy.schema.json](context/profile-privacy.schema.json) |
 ## Schema Hierarchy
 
 * Profile privacy `https://ns.adobe.com/xdm/context/profile-privacy`
@@ -27,6 +27,22 @@ Profile privacy schema captures general and sales sharing opt-out signals.
         "xdm:timestamp": "2019-01-01T15:52:25+00:00"
       }
     ]
+  },
+  "xdm:identityPrivacyInfo": {
+    "ECID": {
+      "11112222233333444": {
+        "xdm:identityIABConsent": {
+          "xdm:consentTimestamp": "2020-04-11T05:05:05Z",
+          "xdm:consentString": {
+            "xdm:consentStandard": "IAB TCF",
+            "xdm:consentStandardVersion": "2.0",
+            "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
+            "xdm:gdprApplies": true,
+            "xdm:containsPersonalData": false
+          }
+        }
+      }
+    }
   }
 }
 ```
@@ -35,8 +51,33 @@ Profile privacy schema captures general and sales sharing opt-out signals.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Profile privacy (this schema) |
 | [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Profile privacy (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:identityPrivacyInfo
+### Identity level privacy information
+
+Captured privacy information for identities in profile.
+
+`xdm:identityPrivacyInfo`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:identityPrivacyInfo Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
 
 ## xdm:optOutConsentLevel
 ### Opt-out consent level

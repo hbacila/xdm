@@ -34,7 +34,7 @@
                     "const": "count"
                 },
                 "xdm:unit": {
-                    "const": null
+                    "const": ""
                 }
             }
         }
@@ -53,13 +53,13 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "schema:name": "web metric: linkClicks",
             "@id": "xdm:linkClicks",
             "xdm:measurement": "count",
-            "xdm:unit": null
+            "xdm:unit": ""
         }
     ]
 }

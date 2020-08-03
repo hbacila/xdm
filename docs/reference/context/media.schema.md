@@ -9,7 +9,7 @@ Media context information for content related interactions.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media.schema.json](context/media.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/media.schema.json](context/media.schema.json) |
 ## Schema Hierarchy
 
 * Media information `https://ns.adobe.com/xdm/context/media`
@@ -24,6 +24,8 @@ Media context information for content related interactions.
     "xdm:primaryAssetReference": {
       "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
       "dc:title": "Floki Begs Helga for Freedom",
+      "dc:creator": "Video Author",
+      "dc:publisher": "tvonline",
       "xmpDM:duration": 87,
       "iptc4xmpExt:Series": {
         "iptc4xmpExt:Name": "nba_highlights",
@@ -31,6 +33,7 @@ Media context information for content related interactions.
       },
       "xdm:showType": "episode",
       "xdm:streamFormat": "long",
+      "xdm:streamType": "video",
       "iptc4xmpExt:Season": {
         "iptc4xmpExt:Number": 1
       },
@@ -42,29 +45,33 @@ Media context information for content related interactions.
       ],
       "iptc4xmpExt:rating": [
         {
-          "iptc4xmpExt:RatingValue": "TV14",
-          "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          "iptc4xmpExt:RatingValue": "TV",
+          "iptc4xmpExt:RatingSourceLink": "http://www.tvrates.org/ratings.htm"
         }
       ],
       "iptc4xmpExt:creator": [
         {
-          "iptc4xmpExt:Name": "ESPN"
+          "iptc4xmpExt:Name": "MyChannel"
         }
       ]
     },
     "xdm:primaryAssetViewDetails": {
       "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-      "xdm:playerName": "watchespn",
-      "xdm:broadcastChannel": "WatchESPN",
+      "xdm:playerName": "watchmytv",
+      "xdm:videoSegment": "3-10",
+      "xdm:path": "mid:movie:part:foo.com:dfehfdb3-4ce7",
+      "xdm:broadcastChannel": "WatchMyTV",
       "xdm:broadcastContentType": "VOD",
       "xdm:streamFormat": "short",
+      "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
       "xdm:playerSDKVersion": {
         "xdm:version": "1.0.8"
       },
-      "xdm:broadcastNetwork": "nbcu",
+      "xdm:broadcastNetwork": "eccu",
       "xdm:adLoadType": "2",
-      "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-      "xdm:sessionTimeout": 1800
+      "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9080890106690980_38_3_M_HD.m3u8",
+      "xdm:sessionTimeout": 1800,
+      "xdm:downloadedPlayback": false
     },
     "xdm:mediaChapter": {
       "xdm:chapterAssetReference": {

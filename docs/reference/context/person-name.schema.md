@@ -12,7 +12,7 @@ In addition, a number of optional properties are made available that can be used
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 ## Schema Hierarchy
 
 * Person name `https://ns.adobe.com/xdm/context/person-name`
@@ -56,6 +56,7 @@ In addition, a number of optional properties are made available that can be used
 | [xdm:fullName](#xdmfullname) | `string` | Optional | Person name (this schema) |
 | [xdm:lastName](#xdmlastname) | `string` | Optional | Person name (this schema) |
 | [xdm:middleName](#xdmmiddlename) | `string` | Optional | Person name (this schema) |
+| [xdm:suffix](#xdmsuffix) | `string` | Optional | Person name (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:courtesyTitle
@@ -149,6 +150,26 @@ Middle, alternative, or additional names supplied between the first name and las
 * defined in this schema
 
 ### xdm:middleName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:suffix
+### Suffix
+
+A group of letters provided after a person's name to provide additional information. The `suffix` is used at the end of someones name. For example Jr., Sr., M.D., PhD, I, II, III, etc.
+
+`xdm:suffix`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:suffix Type
 
 
 `string`

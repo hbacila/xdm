@@ -50,6 +50,7 @@
                         "^dsp:.*$": {},
                         "^searchads:.*$": {},
                         "^adcloud:.*$": {},
+                        "^id3:.*$": {},
                         ".+://.+": {},
                         "@.*": {}
                     },
@@ -225,6 +226,11 @@
                                     "type": "string",
                                     "format": "url",
                                     "const": "https://ns.adobe.com/adcloud/"
+                                },
+                                "id3": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "const": "http://id3.org/ns/2.4/"
                                 }
                             },
                             "additionalProperties": false,
@@ -266,6 +272,7 @@
                         "^dsp:.*$": {},
                         "^searchads:.*$": {},
                         "^adcloud:.*$": {},
+                        "^id3:.*$": {},
                         ".+://.+": {}
                     },
                     "required": [
@@ -281,7 +288,7 @@
             "$ref": "#/definitions/@context"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",

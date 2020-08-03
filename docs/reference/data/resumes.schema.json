@@ -33,7 +33,7 @@
                     "const": "count"
                 },
                 "xdm:unit": {
-                    "const": null
+                    "const": ""
                 }
             }
         }
@@ -52,13 +52,13 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "schema:name": "metric: resumes",
             "@id": "xdm:resumes",
             "xdm:measurement": "count",
-            "xdm:unit": null
+            "xdm:unit": ""
         }
     ]
 }

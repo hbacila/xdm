@@ -50,6 +50,7 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^id3:.*$": {},
             "^ct:.*$": {},
             ".+://.+": {},
             "@.*": {}
@@ -227,14 +228,22 @@
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
                 },
-                "contenTelemetry": {
+                "id3": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "http://id3.org/ns/2.4/"
+                },
+                "ct": {
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/content-telemetry/"
-                }
+				}
+
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -270,10 +279,13 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^id3:.*$": {},
             "^ct:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]
@@ -284,5 +296,5 @@
       "$ref": "#/definitions/@context"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

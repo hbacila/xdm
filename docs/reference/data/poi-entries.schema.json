@@ -34,7 +34,7 @@
                     "const": "count"
                 },
                 "xdm:unit": {
-                    "const": null
+                    "const": ""
                 }
             }
         }
@@ -53,13 +53,13 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "schema:name": "placecontext: poiEntries",
             "@id": "xdm:poiEntries",
             "xdm:measurement": "count",
-            "xdm:unit": null
+            "xdm:unit": ""
         }
     ]
 }

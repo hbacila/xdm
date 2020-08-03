@@ -9,7 +9,7 @@ The commerce metric `product-list-views` describes how often a product list has 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-views.schema.json](data/product-list-views.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/product-list-views.schema.json](data/product-list-views.schema.json) |
 ## Schema Hierarchy
 
 * Product List Views `https://ns.adobe.com/xdm/data/metrics/product-list-views`
@@ -22,7 +22,7 @@ The commerce metric `product-list-views` describes how often a product list has 
   "schema:name": "commerce metric: productListViews",
   "@id": "xdm:productListViews",
   "xdm:measurement": "count",
-  "xdm:unit": null
+  "xdm:unit": ""
 }
 ```
 
@@ -33,7 +33,7 @@ The commerce metric `product-list-views` describes how often a product list has 
 | [@id](#id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#id) |
 | [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
 | [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
-| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
+| [xdm:unit](#xdmunit) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -115,29 +115,38 @@ How to take measures of this metric.
 
 ## xdm:unit
 
+The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)
 
 `xdm:unit`
 * is **required**
-* type: complex
+* type: `string`
 * defined in [Metric Definition](metricdefinition.schema.md#xdmunit)
 
 ### xdm:unit Type
-
-
-**Any** following *options* needs to be fulfilled.
-
-
-#### Option 1
 
 
 `string`
 
 
 
-#### Option 2
 
 
+### xdm:unit Examples
 
+```json
+"m"
+```
 
+```json
+"kg"
+```
+
+```json
+"s"
+```
+
+```json
+"USD"
+```
 
 

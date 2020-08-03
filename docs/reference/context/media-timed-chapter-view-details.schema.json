@@ -9,14 +9,14 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Timed media chapter view details",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:extensible": true,
     "description": "View details for the chapter playback captured by the experience event.",
     "definitions": {
         "media-chapter-view-details": {
             "properties": {
                 "xdm:index": {
-                    "title": "Chapter index",
+                    "title": "Chapter position",
                     "type": "integer",
                     "description": "The index of the chapter inside the content."
                 },

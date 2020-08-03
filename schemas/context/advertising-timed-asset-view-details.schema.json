@@ -20,19 +20,16 @@
           "description": "The name of the player responsible for rendering the ad."
         },
         "xdm:index": {
-          "title": "Ad index in pod",
+          "title": "Ad In Pod Position",
           "type": "integer",
           "description": "The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1."
         },
         "xdm:adBreak": {
-            "title": "Ad break",
-            "description": "Details about how a timed advertising is inserted into a timed media.",
-            "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
+          "title": "Ad break",
+          "description": "Details about how a timed advertising is inserted into a timed media.",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
         }
-      },
-      "required": [
-        "xdm:index"
-      ]
+      }
     }
   },
   "allOf": [
@@ -43,5 +40,5 @@
       "$ref": "#/definitions/adAssetViewDetails"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

@@ -28,6 +28,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/experience/adcloud/experienceevent-all",
+    "https://ns.adobe.com/experience/adcloud/creative-event",
     "https://ns.adobe.com/experience/target/experienceevent-shared",
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
     "https://ns.adobe.com/experience/implementations-ext",
@@ -85,6 +86,9 @@
       "$ref": "https://ns.adobe.com/experience/adcloud/experienceevent-all"
     },
     {
+      "$ref": "https://ns.adobe.com/experience/adcloud/creative-event"
+    },
+    {
       "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"
     },
     {
@@ -100,5 +104,5 @@
       "$ref": "#/definitions/adcloud-experienceevent"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }
