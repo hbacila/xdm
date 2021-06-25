@@ -1,6 +1,6 @@
 # Stabilization Candidates
 
-_Generated on **Tue Jul 28 2020 01:19:26 GMT+0000 (UTC)**_
+_Generated on **Mon Jun 21 2021 23:04:51 GMT+0000 (UTC)**_
 
 
 ### Unknown Status, needs immediate attention
@@ -13,16 +13,14 @@ _Generated on **Tue Jul 28 2020 01:19:26 GMT+0000 (UTC)**_
 
 |Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|
 |------|------|--------------------|-----------------------|----------------------------------|
-|[schemas/context/profile-phones](schemas/context/profile-phones.schema.json)|experimental|6|6|[bf83bd8](https://github.com/adobe/xdm/commit/bf83bd8ce14a9bb7228fbf713f73df2ada4b7421 "added example file") [cd68e9f](https://github.com/adobe/xdm/commit/cd68e9fb90e07c7f49266708d0b6b00bbd9ceee0 "added eric's profile-phones schema")|
+|[schemas/descriptors/relationship/descriptorRelationship](schemas/descriptors/relationship/descriptorRelationship.schema.json)|experimental|**74**|**74**|[8616f86](https://github.com/adobe/xdm/commit/8616f862621868dfb4ffa7286938186de4822d96 "Added meta:createdDate attribute")|
+|[schemas/destinations/solutions/analytics-experienceevent](schemas/destinations/solutions/analytics-experienceevent.schema.json)|experimental|**54**|**54**|[b35b137](https://github.com/adobe/xdm/commit/b35b13777aaa583e8af89a5d970c94a198ac4f5d "Update analytics-experienceevent.schema.json") [dc02703](https://github.com/adobe/xdm/commit/dc027034bf574c12272023a42ed0be2182c30d86 "added adobe analytics global schema") [2e2e6da](https://github.com/adobe/xdm/commit/2e2e6da99c63a4e01666320d69ade646604888e4 "added adobe analytics global schema")|
 
 
 ### Stabilizing
 
 |Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|
 |------|------|--------------------|-----------------------|----------------------------------|
-|[schemas/context/destination-namespace](schemas/context/destination-namespace.schema.json)|stabilizing|13|10|[20ec73a](https://github.com/adobe/xdm/commit/20ec73a7fc7818bbe33b19f631cd108ee5143f8e "updated examples") [734c78e](https://github.com/adobe/xdm/commit/734c78edf2344fa3a0f90bda38706f1992017405 "updated destination schemas") [ad5b101](https://github.com/adobe/xdm/commit/ad5b101b1e239fe2ce1c7b20d6cf0e7d076bd148 "destination schemas")|
-|[schemas/context/destination-segment](schemas/context/destination-segment.schema.json)|stabilizing|13|10|[20ec73a](https://github.com/adobe/xdm/commit/20ec73a7fc7818bbe33b19f631cd108ee5143f8e "updated examples") [734c78e](https://github.com/adobe/xdm/commit/734c78edf2344fa3a0f90bda38706f1992017405 "updated destination schemas") [ad5b101](https://github.com/adobe/xdm/commit/ad5b101b1e239fe2ce1c7b20d6cf0e7d076bd148 "destination schemas")|
-|[schemas/context/destination](schemas/context/destination.schema.json)|stabilizing|13|6|[11feeae](https://github.com/adobe/xdm/commit/11feeae98190fd2dfd2c5985e6e9d6727a74766f "updated destinations schema") [20ec73a](https://github.com/adobe/xdm/commit/20ec73a7fc7818bbe33b19f631cd108ee5143f8e "updated examples") [734c78e](https://github.com/adobe/xdm/commit/734c78edf2344fa3a0f90bda38706f1992017405 "updated destination schemas") [ad5b101](https://github.com/adobe/xdm/commit/ad5b101b1e239fe2ce1c7b20d6cf0e7d076bd148 "destination schemas")|
 
 
 

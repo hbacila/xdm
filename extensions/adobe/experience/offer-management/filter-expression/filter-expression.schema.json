@@ -111,7 +111,6 @@
         "one": "There exists one and only one."
       }
     },
-
     "function-application-content": {
       "type": "object",
       "title": "N-ary Function Application",
@@ -127,7 +126,10 @@
               "$ref": "#/definitions/function-type"
             }
           },
-          "required": ["nodeType", "fnName"]
+          "required": [
+            "nodeType",
+            "fnName"
+          ]
         },
         {
           "oneOf": [
@@ -175,6 +177,7 @@
       ]
     },
     "function-content-and": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -184,7 +187,7 @@
           "type": "string",
           "const": "and"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -195,6 +198,7 @@
       "additionalProperties": false
     },
     "function-content-or": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -204,7 +208,7 @@
           "type": "string",
           "const": "or"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -215,6 +219,7 @@
       "additionalProperties": false
     },
     "function-content-equals-native": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -224,7 +229,7 @@
           "type": "string",
           "const": "="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -236,6 +241,7 @@
       "additionalProperties": false
     },
     "function-content-not-equals-native": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -245,7 +251,7 @@
           "type": "string",
           "const": "!="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -257,6 +263,7 @@
       "additionalProperties": false
     },
     "function-content-greater-than-native": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -266,7 +273,7 @@
           "type": "string",
           "const": ">"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -278,6 +285,7 @@
       "additionalProperties": false
     },
     "function-content-greater-than-or-equal-native": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -287,7 +295,7 @@
           "type": "string",
           "const": ">="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -299,6 +307,7 @@
       "additionalProperties": false
     },
     "function-content-less-than-or-equal-native": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -308,7 +317,7 @@
           "type": "string",
           "const": "<="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -320,6 +329,7 @@
       "additionalProperties": false
     },
     "function-content-less-than-native": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -329,7 +339,7 @@
           "type": "string",
           "const": "<"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -341,6 +351,7 @@
       "additionalProperties": false
     },
     "function-content-in": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -350,7 +361,7 @@
           "type": "string",
           "const": "in"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -362,6 +373,7 @@
       "additionalProperties": false
     },
     "function-content-not-in": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -371,7 +383,7 @@
           "type": "string",
           "const": "notIn"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -383,6 +395,7 @@
       "additionalProperties": false
     },
     "function-content-null": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -392,7 +405,7 @@
           "type": "string",
           "const": "isNull"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -404,6 +417,7 @@
       "additionalProperties": false
     },
     "function-content-not-null": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -413,7 +427,7 @@
           "type": "string",
           "const": "isNotNull"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -425,6 +439,7 @@
       "additionalProperties": false
     },
     "function-content-equals-string": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -434,7 +449,7 @@
           "type": "string",
           "const": "="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -446,6 +461,7 @@
       "additionalProperties": false
     },
     "function-content-not-equal-to-string": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -455,7 +471,7 @@
           "type": "string",
           "const": "notEqualTo"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -466,7 +482,6 @@
       },
       "additionalProperties": false
     },
-
     "function-creation-content": {
       "type": "object",
       "title": "Function Creation",
@@ -479,7 +494,7 @@
               "type": "string",
               "const": "fnCreate"
             },
-            "params" : {
+            "params": {
               "type": "array",
               "items": {
                 "type": "object",
@@ -488,7 +503,9 @@
                     "type": "string"
                   }
                 },
-                "required": ["varName"]
+                "required": [
+                  "varName"
+                ]
               },
               "minItems": 1
             },
@@ -496,11 +513,14 @@
               "$ref": "#/definitions/function-application-content"
             }
           },
-          "required": ["nodeType", "params", "body"]
+          "required": [
+            "nodeType",
+            "params",
+            "body"
+          ]
         }
       ]
     },
-
     "field-lookup-content": {
       "type": "object",
       "title": "Field Accessor",
@@ -520,12 +540,14 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "fieldName"],
+          "required": [
+            "nodeType",
+            "fieldName"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "literal-content": {
       "type": "object",
       "title": "Literal",
@@ -542,7 +564,10 @@
               "$ref": "#/definitions/literal-type"
             }
           },
-          "required": ["nodeType", "literalType"]
+          "required": [
+            "nodeType",
+            "literalType"
+          ]
         },
         {
           "oneOf": [
@@ -569,6 +594,7 @@
       ]
     },
     "literal-string-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -578,13 +604,14 @@
           "type": "string",
           "const": "String"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
       "additionalProperties": false
     },
     "literal-number-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -594,13 +621,14 @@
           "type": "string",
           "const": "Number"
         },
-        "value" : {
+        "value": {
           "type": "number"
         }
       },
       "additionalProperties": false
     },
     "literal-integer-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -610,13 +638,14 @@
           "type": "string",
           "const": "Integer"
         },
-        "value" : {
+        "value": {
           "type": "integer"
         }
       },
       "additionalProperties": false
     },
     "literal-boolean-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -626,13 +655,14 @@
           "type": "string",
           "const": "Boolean"
         },
-        "value" : {
+        "value": {
           "type": "boolean"
         }
       },
       "additionalProperties": false
     },
     "literal-list-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -642,13 +672,18 @@
           "type": "string",
           "const": "List"
         },
-        "value" : {
-          "type": "array"
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
         }
       },
       "additionalProperties": false
     },
     "literal-xdmobject-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -658,13 +693,14 @@
           "type": "string",
           "const": "XDMObject"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
       "additionalProperties": false
     },
     "literal-query-string-content": {
+      "type": "object",
       "properties": {
         "nodeType": {
           "type": "string",
@@ -674,13 +710,12 @@
           "type": "string",
           "const": "QueryString"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
       "additionalProperties": false
     },
-
     "quantification-content": {
       "type": "object",
       "title": "Apply a Quantification",
@@ -704,12 +739,15 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "quantifier", "variables"],
+          "required": [
+            "nodeType",
+            "quantifier",
+            "variables"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "select-expression-content": {
       "type": "object",
       "title": "Object Tree Evaluation",
@@ -730,12 +768,14 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "variables"],
+          "required": [
+            "nodeType",
+            "variables"
+          ],
           "additionalProperties": false
         }
       ]
     },
-    
     "variable-domain-content": {
       "type": "object",
       "title": "Define a variable and its domain",
@@ -759,7 +799,11 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "varName", "from"],
+          "required": [
+            "nodeType",
+            "varName",
+            "from"
+          ],
           "additionalProperties": false
         }
       ]
@@ -781,12 +825,14 @@
               "pattern": "^[_A-Za-z0-9]+$"
             }
           },
-          "required": ["nodeType", "varName"],
+          "required": [
+            "nodeType",
+            "varName"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "function-content-model-instances": {
       "type": "object",
       "title": "Reference all instances of a given model",
@@ -811,12 +857,15 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "fnName", "params"],
+          "required": [
+            "nodeType",
+            "fnName",
+            "params"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "node-content": {
       "allOf": [
         {
@@ -826,7 +875,9 @@
               "$ref": "#/definitions/node-type"
             }
           },
-          "required": ["nodeType"]
+          "required": [
+            "nodeType"
+          ]
         },
         {
           "oneOf": [
@@ -860,5 +911,6 @@
     {
       "$ref": "#/definitions/node-content"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }
